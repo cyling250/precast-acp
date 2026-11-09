@@ -1,0 +1,33 @@
+[project]
+name = "precast-acp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    # 上界 <2.13: 锁定在 2.12 线, 与 cu130 索引提供的 GPU 轮子对应
+    "torch>=2.0,<2.13",
+    "numpy>=2.0",
+    "open3d~=0.19.0",
+    "scipy",
+    "rich",
+    "shapely",
+    # lib/pointcloud_generator/_noise.py 直接 import matplotlib.path
+    "matplotlib",
+]
+
+[tool.uv]
+# 默认索引: 国内镜像
+[[tool.uv.index]]
+url = "https://mirrors.aliyun.com/pypi/simple/"
+default = true
+
+# PyTorch 官方 CUDA 轮子索引 (Windows PyPI 线只有 CPU 版, GPU 训练需走此索引)
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
+
+# torch 固定从 cu130 索引取
+[tool.uv.sources]
+torch = { index = "pytorch-cu130" }

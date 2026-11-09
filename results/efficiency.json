@@ -1,0 +1,11 @@
+{
+ "device": "NVIDIA GeForce RTX 4060 Ti",
+ "params": {
+  "head_point_rb": 93333,
+  "head_point_st": 92301,
+  "head_bev_sleeve": 171130,
+  "seg": 622148
+ },
+ "latency_per_piece_s": 31.54,
+ "latency_pieces": 20
+}

@@ -1,0 +1,434 @@
+{
+ "scene": "mock/scene/v1/s6/scene_s6_cfg03_0002.npz",
+ "aggregate": {
+  "面提取成功": "7/7",
+  "钢筋": {
+   "根数全对": 0.0,
+   "端别正确": 1.0,
+   "召回": 0.27,
+   "位置p50": 8.6,
+   "直径误差p50": 0.0,
+   "直径误差p90": 7.0,
+   "外露量测误差p50": 11.76
+  },
+  "套筒": {
+   "根数全对": 0.286,
+   "端别正确": 0.714,
+   "召回": 0.12,
+   "位置p50": 0.73,
+   "直径误差p50": 0.0,
+   "直径误差p90": 0.0,
+   "套筒可见占比": 0.338
+  }
+ },
+ "构件GT数": 7,
+ "覆盖构件数": 7,
+ "筋簇种子": 33,
+ "per_file": [
+  {
+   "eval": {
+    "rb_n_ok": 0,
+    "rb_end_ok": 1,
+    "rb_match": 12,
+    "rb_pos": [
+     5.850412845611572,
+     4.333503246307373,
+     8.199898719787598,
+     7.655540943145752,
+     8.530891418457031,
+     7.4136152267456055,
+     12.540216445922852,
+     9.124414443969727,
+     6.658384799957275,
+     18.763042449951172,
+     10.613654136657715,
+     8.66256332397461
+    ],
+    "rb_spec": [
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1,
+     0,
+     1,
+     0
+    ],
+    "rb_diam_err": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     -7.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     -7.0,
+     0.0,
+     -7.0
+    ],
+    "rb_expo_err": [
+     14.364691724875684,
+     6.980597486594434,
+     1.2041692639381836,
+     15.774054517844434,
+     5.334404954811816,
+     1.8337335680930664,
+     7.890753736594434,
+     0.7641534899680664,
+     9.147955885031934,
+     3.5406560803444336,
+     4.056830396750684,
+     0.9852838610618164
+    ],
+    "sl_all_n": 12,
+    "sl_total_gt": 3,
+    "sl_n_ok": 0,
+    "sl_end_ok": 1,
+    "sl_match": 1,
+    "sl_pos": [
+     2.257749080657959
+    ],
+    "sl_spec": [
+     1
+    ],
+    "sl_diam_err": [
+     0.0
+    ],
+    "st_total_gt": 0,
+    "st_match": 0,
+    "st_leg_err": [],
+    "st_h_err": [],
+    "rb_gt": 12,
+    "st_cert": {
+     "certified": true,
+     "n_st": 2250,
+     "top_n_st": 217
+    }
+   },
+   "res": {
+    "rb_n": 13,
+    "sl_n": 1,
+    "exposed_mm": 641.0
+   },
+   "file": "m0",
+   "sec": 0.9,
+   "crop": {
+    "tag": "seed2",
+    "cov": 1.0,
+    "excess": 0.011
+   }
+  },
+  {
+   "eval": {
+    "rb_n_ok": 0,
+    "rb_end_ok": 1,
+    "rb_match": 0,
+    "rb_pos": [],
+    "rb_spec": [],
+    "rb_diam_err": [],
+    "rb_expo_err": [],
+    "sl_all_n": 8,
+    "sl_total_gt": 8,
+    "sl_n_ok": 0,
+    "sl_end_ok": 1,
+    "sl_match": 0,
+    "sl_pos": [],
+    "sl_spec": [],
+    "sl_diam_err": [],
+    "st_total_gt": 0,
+    "st_match": 0,
+    "st_leg_err": [],
+    "st_h_err": [],
+    "rb_gt": 8,
+    "st_cert": {
+     "certified": true,
+     "n_st": 2250,
+     "top_n_st": 289
+    }
+   },
+   "res": {
+    "rb_n": 1,
+    "sl_n": 9,
+    "exposed_mm": 22.0
+   },
+   "file": "m1",
+   "sec": 7.5,
+   "crop": {
+    "tag": "merged",
+    "cov": 1.0,
+    "excess": 0.826
+   }
+  },
+  {
+   "eval": {
+    "rb_n_ok": 0,
+    "rb_end_ok": 1,
+    "rb_match": 1,
+    "rb_pos": [
+     6.847070693969727
+    ],
+    "rb_spec": [
+     1
+    ],
+    "rb_diam_err": [
+     0.0
+    ],
+    "rb_expo_err": [
+     1098.6203587949894
+    ],
+    "sl_all_n": 11,
+    "sl_total_gt": 0,
+    "sl_n_ok": 0,
+    "sl_end_ok": 1,
+    "sl_match": 0,
+    "sl_pos": [],
+    "sl_spec": [],
+    "sl_diam_err": [],
+    "st_total_gt": 0,
+    "st_match": 0,
+    "st_leg_err": [],
+    "st_h_err": [],
+    "rb_gt": 11,
+    "st_cert": {
+     "certified": false,
+     "n_st": 755,
+     "top_n_st": 418
+    }
+   },
+   "res": {
+    "rb_n": 1,
+    "sl_n": 2,
+    "exposed_mm": 1383.0
+   },
+   "file": "m2",
+   "sec": 0.2,
+   "crop": {
+    "tag": "seed5",
+    "cov": 0.113,
+    "excess": 0.025
+   }
+  },
+  {
+   "eval": {
+    "rb_n_ok": 0,
+    "rb_end_ok": 1,
+    "rb_match": 2,
+    "rb_pos": [
+     15.679323196411133,
+     67.73448944091797
+    ],
+    "rb_spec": [
+     0,
+     0
+    ],
+    "rb_diam_err": [
+     3.0,
+     -7.0
+    ],
+    "rb_expo_err": [
+     45.86218051314313,
+     876.1676618635659
+    ],
+    "sl_all_n": 12,
+    "sl_total_gt": 0,
+    "sl_n_ok": 1,
+    "sl_end_ok": 0,
+    "sl_match": 0,
+    "sl_pos": [],
+    "sl_spec": [],
+    "sl_diam_err": [],
+    "st_total_gt": 0,
+    "st_match": 0,
+    "st_leg_err": [],
+    "st_h_err": [],
+    "rb_gt": 12,
+    "st_cert": {
+     "certified": false,
+     "n_st": 896,
+     "top_n_st": 503
+    }
+   },
+   "res": {
+    "rb_n": 4,
+    "sl_n": 0,
+    "exposed_mm": 914.0
+   },
+   "file": "m3",
+   "sec": 0.8,
+   "crop": {
+    "tag": "seed2",
+    "cov": 0.82,
+    "excess": 0.184
+   }
+  },
+  {
+   "eval": {
+    "rb_n_ok": 0,
+    "rb_end_ok": 1,
+    "rb_match": 0,
+    "rb_pos": [],
+    "rb_spec": [],
+    "rb_diam_err": [],
+    "rb_expo_err": [],
+    "sl_all_n": 10,
+    "sl_total_gt": 6,
+    "sl_n_ok": 0,
+    "sl_end_ok": 1,
+    "sl_match": 1,
+    "sl_pos": [
+     0.7139447331428528
+    ],
+    "sl_spec": [
+     1
+    ],
+    "sl_diam_err": [
+     0.0
+    ],
+    "st_total_gt": 0,
+    "st_match": 0,
+    "st_leg_err": [],
+    "st_h_err": [],
+    "rb_gt": 10,
+    "st_cert": {
+     "certified": true,
+     "n_st": 1329,
+     "top_n_st": 184
+    }
+   },
+   "res": {
+    "rb_n": 12,
+    "sl_n": 9,
+    "exposed_mm": 575.0
+   },
+   "file": "m4",
+   "sec": 1.3,
+   "crop": {
+    "tag": "seed4",
+    "cov": 0.733,
+    "excess": 0.448
+   }
+  },
+  {
+   "eval": {
+    "rb_n_ok": 0,
+    "rb_end_ok": 1,
+    "rb_match": 1,
+    "rb_pos": [
+     119.54401397705078
+    ],
+    "rb_spec": [
+     0
+    ],
+    "rb_diam_err": [
+     -4.0
+    ],
+    "rb_expo_err": [
+     778.6493081461634
+    ],
+    "sl_all_n": 12,
+    "sl_total_gt": 0,
+    "sl_n_ok": 1,
+    "sl_end_ok": 0,
+    "sl_match": 0,
+    "sl_pos": [],
+    "sl_spec": [],
+    "sl_diam_err": [],
+    "st_total_gt": 0,
+    "st_match": 0,
+    "st_leg_err": [],
+    "st_h_err": [],
+    "rb_gt": 12,
+    "st_cert": {
+     "certified": false,
+     "n_st": 51,
+     "top_n_st": 0
+    }
+   },
+   "res": {
+    "rb_n": 3,
+    "sl_n": 0,
+    "exposed_mm": 779.0
+   },
+   "file": "m5",
+   "sec": 0.6,
+   "crop": {
+    "tag": "merged",
+    "cov": 0.999,
+    "excess": 0.238
+   }
+  },
+  {
+   "eval": {
+    "rb_n_ok": 0,
+    "rb_end_ok": 1,
+    "rb_match": 4,
+    "rb_pos": [
+     11.782732009887695,
+     10.209192276000977,
+     3.865077018737793,
+     8.12336254119873
+    ],
+    "rb_spec": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "rb_diam_err": [
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "rb_expo_err": [
+     385.24005707843753,
+     442.1676388655469,
+     333.32163056476566,
+     475.8870449934766
+    ],
+    "sl_all_n": 9,
+    "sl_total_gt": 8,
+    "sl_n_ok": 0,
+    "sl_end_ok": 1,
+    "sl_match": 1,
+    "sl_pos": [
+     0.7326964735984802
+    ],
+    "sl_spec": [
+     1
+    ],
+    "sl_diam_err": [
+     0.0
+    ],
+    "st_total_gt": 0,
+    "st_match": 0,
+    "st_leg_err": [],
+    "st_h_err": [],
+    "rb_gt": 9,
+    "st_cert": {
+     "certified": true,
+     "n_st": 5291,
+     "top_n_st": 2
+    }
+   },
+   "res": {
+    "rb_n": 16,
+    "sl_n": 2,
+    "exposed_mm": 706.0
+   },
+   "file": "m6",
+   "sec": 2.7,
+   "crop": {
+    "tag": "merged",
+    "cov": 1.0,
+    "excess": 0.687
+   }
+  }
+ ]
+}
